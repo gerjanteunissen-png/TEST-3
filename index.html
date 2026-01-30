@@ -1,214 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-<meta charset="UTF-8">
-<title>Cloudy Pancake House</title>
-<meta name="description" content="Cloudy Pancake House – Fluffy Japanese soufflé pancakes in a calm, cozy atmosphere.">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cloudy Pancake House – Fluffy Japanse Soufflé Pancakes</title>
+  <meta name="description" content="Zachte, luchtige Japanse soufflé pancakes in een gezellige, Instagram-waardige setting. Perfect voor brunch, dessert of een zoete pauze."/>
+  
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:title" content="Cloudy Pancake House – Fluffy Japanse Soufflé Pancakes"/>
+  <meta property="og:description" content="Super fluffy, wankele pancakes die smelten op je tong. Cozy pastel café vibes."/>
+  <meta property="og:image" content="https://cdn.shortpixel.ai/spai2/q_glossy+w_977+to_auto+ret_img/www.hungryhuy.com/wp-content/uploads/souffle-pancake-texture.jpg"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://jouw-gebruikersnaam.github.io/"/>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #faf8f6;
-  color: #333;
-  line-height: 1.6;
-}
+  <style>
+    :root {
+      --primary: #e76f51;
+      --bg: #fffaf9;
+      --text: #333;
+      --light: #fdf2f0;
+    }
 
-/* HERO */
-.hero {
-  background-image: url("https://images.unsplash.com/photo-1552566626-52f8b828add9");
-  background-size: cover;
-  background-position: center;
-  padding: 100px 20px;
-  text-align: center;
-  color: white;
-  position: relative;
-}
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.45);
-}
-.hero-content {
-  position: relative;
-  z-index: 1;
-}
-.logo {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  background: #fff;
-  margin: 0 auto 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: #e76f51;
-  font-size: 18px;
-}
-.hero h1 {
-  font-size: 3em;
-  margin: 0;
-}
-.hero p {
-  font-size: 1.2em;
-  margin-top: 10px;
-}
+    * { box-sizing: border-box; margin:0; padding:0; }
+    html { scroll-behavior: smooth; }
 
-/* SECTIONS */
-section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 60px 20px;
-}
-h2 {
-  text-align: center;
-  color: #e76f51;
-  margin-bottom: 40px;
-}
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
 
-/* FEATURE IMAGE */
-.feature-image {
-  width: 100%;
-  border-radius: 16px;
-  margin-bottom: 50px;
-}
+    /* HERO */
+    .hero {
+      background-image: url("https://reviewed-com-res.cloudinary.com/image/fetch/s--AeDnXc2V--/b_white,c_limit,cs_srgb,f_auto,fl_progressive.strip_profile,g_center,q_auto,w_1600/https://reviewed-production.s3.amazonaws.com/1566829936655/swanyacharoonwatana.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      padding: 140px 20px;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .logo {
+      font-size: 5rem;
+      margin-bottom: 0.4em;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+    }
+    .hero h1 {
+      font-size: 3.6rem;
+      margin: 0;
+      font-weight: 800;
+      text-shadow: 0 3px 12px rgba(0,0,0,0.6);
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-top: 0.8em;
+      font-weight: 300;
+    }
 
-/* MENU */
-.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-}
-.menu-item {
-  background: white;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
-.menu-item img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-.menu-content {
-  padding: 18px;
-}
-.menu-content h3 {
-  margin: 0 0 6px;
-}
-.price {
-  color: #e76f51;
-  font-weight: bold;
-  margin-top: 6px;
-}
+    /* SECTIONS */
+    section {
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      text-align: center;
+      color: var(--primary);
+      margin-bottom: 2.5rem;
+      font-size: 2.6rem;
+      font-weight: 700;
+    }
 
-/* ABOUT */
-.about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
-}
-.about img {
-  width: 100%;
-  border-radius: 16px;
-}
+    /* MENU */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .menu-item {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      transition: all 0.35s ease;
+    }
+    .menu-item:hover {
+      transform: translateY(-12px) scale(1.04);
+      box-shadow: 0 16px 40px rgba(231,111,81,0.18);
+    }
+    .menu-item img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+    .menu-content {
+      padding: 1.4rem;
+      text-align: center;
+    }
+    .menu-content h3 {
+      margin: 0 0 0.6rem;
+      font-size: 1.4rem;
+      color: #444;
+    }
+    .price {
+      color: var(--primary);
+      font-weight: bold;
+      font-size: 1.3rem;
+      margin: 0.5rem 0;
+    }
 
-/* REVIEWS */
-.review {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  margin-bottom: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
+    /* ABOUT */
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .about img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    @media (max-width: 850px) { .about { grid-template-columns: 1fr; } }
 
-/* FOOTER */
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
-  margin-top: 60px;
-}
+    /* REVIEWS */
+    .review {
+      background: white;
+      padding: 1.8rem;
+      border-radius: 16px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+      font-style: italic;
+    }
 
-@media (max-width: 800px) {
-  .about { grid-template-columns: 1fr; }
-  .hero h1 { font-size: 2.2em; }
-}
-</style>
+    /* ANIMATIES */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* FOOTER */
+    footer {
+      background: #2d2d2d;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      margin-top: 6rem;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.8rem; }
+      .hero p  { font-size: 1.3rem; }
+      h2       { font-size: 2.2rem; }
+    }
+  </style>
 </head>
-
 <body>
 
 <!-- HERO -->
-<div class="hero">
+<div class="hero fade-in">
   <div class="hero-content">
-    <div class="logo">CPH</div>
+    <div class="logo">☁️🥞</div>
     <h1>Cloudy Pancake House</h1>
-    <p>Fluffy Japanese Soufflé Pancakes</p>
+    <p>Super fluffy Japanse soufflé pancakes – smelt op je tong</p>
   </div>
 </div>
 
 <!-- MENU -->
-<section>
-  <h2>Our Pancakes</h2>
-  <img class="feature-image"
-       src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
-       alt="Restaurant interior">
+<section class="fade-in">
+  <h2>Onze Luchtige Pancakes</h2>
   <div id="menu" class="menu-grid"></div>
 </section>
 
 <!-- ABOUT -->
-<section>
-  <h2>About Us</h2>
+<section class="fade-in">
+  <h2>Over Ons</h2>
   <div class="about">
     <div>
-      <p>Cloudy Pancake House is a fictional café designed as a demo website for modern, calm, and cozy brunch spots.</p>
-      <p>We specialize in Japanese soufflé pancakes, cooked slowly to achieve that perfect fluffy texture that melts in your mouth.</p>
-      <p>Our mission: comfort, quality, and a visual experience that makes guests want to return every weekend.</p>
-    </div>
-    <img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b" alt="Fluffy soufflé pancakes">
-  </div>
-</section>
-
-<!-- REVIEWS -->
-<section>
-  <h2>Guest Reviews</h2>
-  <div class="review">⭐⭐⭐⭐⭐ “Soft, airy, and beautifully presented. Worth the wait.”</div>
-  <div class="review">⭐⭐⭐⭐⭐ “A calm atmosphere with the fluffiest pancakes imaginable.”</div>
-  <div class="review">⭐⭐⭐⭐⭐ “Feels like a place you want to return to every weekend.”</div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 Cloudy Pancake House – Demo Website</p>
-</footer>
-
-<script>
-fetch("menu.json")
-  .then(res => res.json())
-  .then(items => {
-    const menu = document.getElementById("menu");
-    items.forEach(item => {
-      const div = document.createElement("div");
-      div.className = "menu-item";
-      div.innerHTML = `
-        <img src="${item.image}" alt="${item.name}">
-        <div class="menu-content">
-          <h3>${item.name}</h3>
-          <p>${item.description}</p>
-          <p class="price">${item.price}</p>
-        </div>
-      `;
-      menu.appendChild(div);
-    });
-  })
-  .catch(err => console.error("Menu could not be loaded", err));
-</script>
-
-</body>
-</html>
+      <p>Cloudy Pancake House haalt inspiratie uit de cozy, pastel cafés zoals Fluffy Fluffy in Kraków – de place to be voor échte Japanse soufflé pancakes.</p>
+      <p>Elke pancake wordt met zorg bereid: super luchtig, hoog en heerlijk wankel. Perfect voor een Instagram-moment, brunch met vrienden of gewoon omdat
