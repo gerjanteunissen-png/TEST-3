@@ -2,77 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sunny Pancake Cafe – Fluffy Treats</title>
-  <meta name="description" content="Sunny Pancake Cafe serves light and fluffy Japanese-style soufflé pancakes.">
+  <title>Cloudy Pancake House – Fluffy Pancakes</title>
+  <meta name="description" content="Cloudy Pancake House serves light, fluffy Japanese-style soufflé pancakes in a cozy atmosphere.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    body { font-family: Arial, sans-serif; margin:0; background:#fff8f0; color:#333; }
-    header { background:#ffb6b9; padding:70px 20px; text-align:center; }
-    header h1 { margin:0; font-size:2.8em; }
-    header p { font-size:1.3em; margin-top:10px; }
+    /* Algemene stijl */
+    body { font-family: 'Arial', sans-serif; margin:0; background:#fffaf6; color:#333; }
+    a { color:#e76f51; text-decoration:none; }
+
+    /* Header met logo en banner */
+    header { position: relative; text-align:center; color:white; }
+    header img.logo { position:absolute; top:20px; left:20px; width:80px; height:80px; border-radius:50%; border:2px solid #fff; }
+    header .banner { width:100%; height:250px; object-fit:cover; filter: brightness(0.75); }
+    header h1 { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); font-size:3em; margin:0; }
+    header p { position:absolute; top:70%; left:50%; transform:translateX(-50%); font-size:1.3em; }
+
+    /* Secties */
     section { max-width:1000px; margin:auto; padding:40px 20px; }
     h2 { color:#e76f51; margin-bottom:20px; }
-    ul { list-style:none; padding:0; display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px; }
-    li { background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); }
-    li img { width:100%; height:200px; object-fit:cover; }
-    li .content { padding:15px; }
-    li .content strong { font-size:1.2em; }
-    .review { background:#fff; border-left:5px solid #ffb6b9; padding:20px; margin-bottom:20px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.05); }
+
+    /* Menu */
+    ul#menu { list-style:none; padding:0; display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px; }
+    li.menu-item { background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); transition: transform 0.2s; }
+    li.menu-item:hover { transform: translateY(-5px); }
+    li.menu-item img { width:100%; height:200px; object-fit:cover; }
+    li.menu-item .content { padding:15px; }
+    li.menu-item .content strong { font-size:1.2em; }
+
+    /* Reviews */
+    .review { background:#fff; border-left:5px solid #ffd6d6; padding:20px; margin-bottom:20px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.05); }
+
+    /* Footer */
     footer { background:#333; color:#fff; text-align:center; padding:40px; margin-top:40px; }
-    a { color:#e76f51; text-decoration:none; }
-    iframe { width:100%; height:300px; border:0; border-radius:12px; margin-top:20px; }
-    @media (max-width:600px){header h1{font-size:2em;}}
+
+    /* Responsive */
+    @media (max-width:600px){ header h1{font-size:2em;} header p{font-size:1em;} }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Sunny Pancake Cafe</h1>
-  <p>Fluffy Japanese Soufflé Pancakes – Demo Website</p>
+  <img src="https://images.unsplash.com/photo-1617196036428-1b5a7c4b9e8f?crop=entropy&cs=tinysrgb&fit=crop&h=80&w=80&q=80" class="logo" alt="Logo">
+  <img src="https://images.unsplash.com/photo-1551024709-8f23befc6b27?crop=entropy&cs=tinysrgb&fit=crop&h=250&w=1200&q=80" class="banner" alt="Banner">
+  <h1>Cloudy Pancake House</h1>
+  <p>Fluffy Japanese Soufflé Pancakes – Cozy & Delicious</p>
 </header>
 
 <section>
   <h2>Menu</h2>
+  <img src="https://images.unsplash.com/photo-1584270354949-924d3d5c0a49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1000" alt="Restaurant interior" style="width:100%; border-radius:12px; margin-bottom:20px;">
   <ul id="menu"></ul>
 </section>
 
 <section>
   <h2>About Us</h2>
   <p>
-    Sunny Pancake Cafe is a fictional café created as a demo.  
-    We specialize in light, fluffy Japanese-style soufflé pancakes, colorful desserts,  
-    and a cheerful pastel interior. Perfect for brunch, treats, and Instagram photos!
+    Welcome to <strong>Cloudy Pancake House</strong>, your cozy corner for dreamy Japanese-style soufflé pancakes.  
+    We believe every pancake should be as soft as a cloud, lovingly made with quality ingredients.  
+    Whether you're here for brunch, a treat, or just a cozy coffee, we promise a fluffy experience you won't forget.
   </p>
-  <img src="https://images.unsplash.com/photo-1584270354949-924d3d5c0a49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDR8fHBhbmNhY2tlfGVufDB8fHx8MTY4ODQ2MTQ4NQ&ixlib=rb-4.0.3&q=80&w=900" alt="Cafe interior">
+  <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=900" alt="Fluffy pancakes" style="width:100%; border-radius:12px; margin-top:20px;">
 </section>
 
 <section>
   <h2>Customer Reviews</h2>
-  <div class="review">⭐⭐⭐⭐⭐ "Absolutely the fluffiest pancakes ever! Super Instagrammable."</div>
-  <div class="review">⭐⭐⭐⭐⭐ "Lovely atmosphere and delicious treats. Highly recommended!"</div>
-  <div class="review">⭐⭐⭐⭐⭐ "A pastel paradise for dessert lovers."</div>
+  <div class="review">⭐⭐⭐⭐⭐ "Absolutely the fluffiest pancakes ever! Perfect spot for brunch."</div>
+  <div class="review">⭐⭐⭐⭐⭐ "Lovely pastel interior and delightful desserts. Highly recommend."</div>
+  <div class="review">⭐⭐⭐⭐⭐ "A dreamy café with soft pancakes and friendly staff."</div>
 </section>
 
 <section>
   <h2>Visit Us</h2>
   <p>📍 456 Dream Boulevard, Sweet Town</p>
   <p>🕒 Daily: 08:00 – 20:00</p>
-  <p>📸 Instagram: <a href="#">@sunnypancakecafe</a></p>
+  <p>📸 Instagram: <a href="#">@cloudypancakehouse</a></p>
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.217!2d-74.006!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjAiTiA3NMKwMDAnMDAuMCJX!5e0!3m2!1sen!2sus!4v1616589552740!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
 </section>
 
 <footer>
-  <p>© 2026 Sunny Pancake Cafe – Demo Website</p>
+  <p>© 2026 Cloudy Pancake House – Demo Website</p>
 </footer>
 
 <script>
+  // Dynamisch menu laden met afbeeldingen
   fetch('menu.json')
     .then(res => res.json())
     .then(items => {
       const list = document.getElementById('menu');
       items.forEach(item => {
         const li = document.createElement('li');
+        li.className = "menu-item";
         li.innerHTML = `
           <img src="${item.image}" alt="${item.name}">
           <div class="content">
