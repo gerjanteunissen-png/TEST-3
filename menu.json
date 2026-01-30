@@ -1,22 +1,26 @@
 [
   {
     "name": "Vanilla Cloud Pancakes",
-    "description": "Soft and airy pancakes with vanilla cream, a touch of powdered sugar",
-    "image": "https://images.unsplash.com/photo-1589987609485-7e3aa17f4b90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+    "description": "Light and fluffy pancakes with vanilla cream & powdered sugar",
+    "price": "8.50",
+    "image": "https://images.pexels.com/photos/376816/pexels-photo-376816.jpeg?auto=compress&cs=tinysrgb&w=400"
   },
   {
     "name": "Berry Dream Stack",
-    "description": "Fluffy pancakes topped with fresh strawberries and blueberries",
-    "image": "https://images.unsplash.com/photo-1606312612332-47e2c88e02d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+    "description": "Fluffy pancakes topped with fresh mixed berries",
+    "price": "9.50",
+    "image": "https://images.pexels.com/photos/376616/pexels-photo-376616.jpeg?auto=compress&cs=tinysrgb&w=400"
   },
   {
     "name": "Chocolate Sky Pancakes",
-    "description": "Rich chocolate pancakes drizzled with sauce and served with fruits",
-    "image": "https://images.unsplash.com/photo-1606312612564-44651d5c41b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+    "description": "Rich chocolate pancakes with fruits & sauce",
+    "price": "10.00",
+    "image": "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=400"
   },
   {
     "name": "Monthly Fantasy Special",
-    "description": "Chef's special of the month, a seasonal treat",
-    "image": "https://images.unsplash.com/photo-1610474584260-5f3178dc04da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+    "description": "Chef’s special seasonal pancake creation",
+    "price": "11.00",
+    "image": "https://images.pexels.com/photos/376973/pexels-photo-376973.jpeg?auto=compress&cs=tinysrgb&w=400"
   }
 ]
