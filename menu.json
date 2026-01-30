@@ -1,22 +1,22 @@
 [
   {
     "name": "Vanilla Cloud Pancakes",
-    "description": "Classic soufflé pancakes with vanilla cream and powdered sugar",
+    "description": "Soft and airy pancakes with vanilla cream, a touch of powdered sugar",
     "image": "https://images.unsplash.com/photo-1589987609485-7e3aa17f4b90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
   },
   {
     "name": "Berry Dream Stack",
-    "description": "Fluffy pancakes topped with strawberries, blueberries, and cream",
+    "description": "Fluffy pancakes topped with fresh strawberries and blueberries",
     "image": "https://images.unsplash.com/photo-1606312612332-47e2c88e02d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
   },
   {
     "name": "Chocolate Sky Pancakes",
-    "description": "Rich cocoa pancakes with chocolate sauce and fresh fruits",
+    "description": "Rich chocolate pancakes drizzled with sauce and served with fruits",
     "image": "https://images.unsplash.com/photo-1606312612564-44651d5c41b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
   },
   {
     "name": "Monthly Fantasy Special",
-    "description": "A rotating seasonal flavor, chef's surprise of the month",
+    "description": "Chef's special of the month, a seasonal treat",
     "image": "https://images.unsplash.com/photo-1610474584260-5f3178dc04da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
   }
 ]
